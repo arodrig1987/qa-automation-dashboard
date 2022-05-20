@@ -1,0 +1,404 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  margin-top: 0;
+  justify-content: center;
+  background-color: #FFFCFF;
+  font-family: 'Kalam', cursive;
+}
+button {
+  width: 75px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px gray;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 240px;
+	background: #11101d;
+	padding: 6px 14px;
+	transition: all 0.5s ease;
+}
+
+.sidebar.active {
+	width: 240px;
+}
+
+.sidebar ul {
+	margin-top: 20px;
+}
+
+.sidebar .logo_content .logo {
+	color: #fff;
+	display: flex;
+	height: 50px;
+	width: 100%;
+	align-items: center;
+	opacity: 1;
+	pointer-events: none;
+}
+
+.sidebar.active .logo_content .logo {
+	opacity: 1;
+	pointer-events: none;
+}
+
+.sidebar ul li {
+	position: relative;
+	height: 50px;
+	width: 100%;
+	margin: 0 5px;
+	list-style-type: none;
+	line-height: 50px;
+}
+
+.sidebar ul li .sub-menu {
+	padding: 6px 6px 14px 80px;
+	margin-top: -10px;
+	background: #1d1b31;
+	display: none;
+}
+
+.sidebar ul li.showMenu .sub-menu {
+	display: block;
+}
+
+.sidebar ul li .sub-menu a {
+	color: #fff;
+	font-size: 15px;
+	padding: 5px 0;
+	white-space: nowrap;
+	opacity: 0.6;
+	transition: all 0.3s ease;
+}
+
+.sidebar ul li .tooltip {
+	position: absolute;
+	left: 122px;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 6px;
+	height: 35px;
+	width: 122px;
+	background: #fff;
+	line-height: 35px;
+	text-align: center;
+	box-shadow: 0 5px 10px rgba(255, 0, 0, 0.2);
+	transition: 0s;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.sidebar ul li:hover .tooltip{
+	transition: all 0.5s ease;
+	opacity: 1;
+	top: 50%;
+}
+
+.sidebar ul li input {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	border-radius: 12px;
+	outline: none;
+	border: none;
+	background: #1d1b31;
+	padding-left: 50px;
+	font-size: 18px;
+	color: #fff;
+}
+
+.sidebar ul li .bx-search-alt-2 {
+	position: absolute;
+	z-index: 99;
+	color: #fff;
+	font-size: 22px;
+	transition: all 0.5s ease;
+}
+
+.sidebar ul li .bx-search-alt-2:hover {
+	background: #fff;
+	color: #1d1b31;
+}
+
+.sidebar .bx-menu {
+	color: #fff;
+	font-size: 22px;
+}
+
+.sidebar ul li a {
+	color: #fff;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	transition: all 0.6s ease;
+	border-radius: 12px;
+}
+
+.sidebar ul li a:hover {
+	color: #11101d;
+	background: #fff;
+}
+
+.siderbar ul li a:hover .bxl-gitlab {
+	color: #fca326;
+}
+
+.sidebar ul li i {
+	height: 50px;
+	min-width: 50px;
+	border-radius: 12px;
+	line-height: 50px;
+	text-align: center;
+}
+
+.sidebar .ddmlogo_content {
+	position: absolute;
+	color: #fff;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.sidebar .ddmlogo_content .ddmlogo {
+	position: relative;
+	padding: 10px 6px;
+	height: 60px;
+	background: #11101d;
+}
+
+
+.ddmlogo_content .ddmlogo .ddmlogo_details {
+	display: flex;
+	align-items: center;
+}
+
+.ddmlogo .ddmlogo_details img {
+	height: 100px;
+	width: 191px;
+	object-fit: cover;
+	transform: translateY(-60px) translateX(17px);
+	border-radius: 12px;
+}
+
+.logo_content .logo i{
+	font-size: 28px;
+	margin-right: 5px;
+}
+
+.logo_content .logo .logo_name {
+	font-size: 20px;
+	font-weight: 400;
+	padding-left: 0px;
+}
+
+.sidebar #btn {
+	position: absolute;
+	color: #fff;
+	top: 6px;
+	left: 50%;
+	font-size: 20px;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	line-height: 50px;
+	transform: translateX(-50%);
+}
+
+.sidebar.active #btn {
+	left: 90%;
+}
+
+.bx-bug {
+	color: #F47174;
+	padding: 15px;
+}
+
+.bxs-file-doc {
+	color: #faf0a6;
+}
+
+.bxs-tree {
+	color: #8ae23a;
+}
+
+.bxl-gitlab {
+	color: #fca326;
+}
+
+.bxs-dashboard {
+	color: #9addfb;
+}
+
+.home_content {
+	position: absolute;
+	height: 100%;
+	width: calc(100% - 240px);
+	top: 0;
+	left: 240px;
+}
+
+#header {
+  padding: 10px 10px 0px;
+  color: #3341D8;
+  font-size: 26px;
+  font-family: 'Vollkorn', serif;
+  text-shadow: 2px 2px 2px #F1E819;
+  display: flex;
+  justify-content: space-between;
+  background-image: url("img/headerbackground.jpg");
+  height: 220px;
+  width: 1400px;
+  background-repeat: no-repeat;
+}
+
+#btnDisplay {
+	display: flex;
+	justify-content: space-between;
+}
+
+#header .monthButtons {
+	position: absolute;
+	transform: translateY(150px);
+}
+
+/*
+#header .envButtons {
+	position: absolute;
+	transform: translateY(-400px);
+}
+*/
+
+#header button {
+  background-color:#11101d;
+}
+
+#header button:hover {
+	color: #11101d;
+	background: #fff;
+	transition: all 0.5s ease;
+}
+#container {
+  width: 770px;
+}
+
+
+
+#weekdays {
+  width: 99%;
+  display: flex;
+  color: #247BA0;
+  justify-content: space-between;
+  font-size: 14px;
+}
+#weekdays div {
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+}
+#calendar {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.day {
+  width: 100px;
+  padding: 10px;
+  height: 100px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: white;
+  margin: 5px;
+  box-shadow: 0px 0px 3px #FFFFE0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.day:hover {
+  background-color: #e8faed;
+}
+
+.day + #currentDay {
+  background-color:#e8f4fa;
+}
+.event {
+  font-size: 10px;
+  padding: 3px;
+  background-color: #58bae4;
+  color: white;
+  border-radius: 5px;
+  max-height: 55px;
+  overflow: hidden;
+}
+.padding {
+  cursor: default !important;
+  background-color: #FFFCFF !important;
+  box-shadow: none !important;
+}
+#newEventModal, #deleteEventModal {
+  display: none;
+  z-index: 20;
+  padding: 25px;
+  background-color: #e8f4fa;
+  box-shadow: 0px 0px 3px black;
+  border-radius: 5px;
+  width: 350px;
+  top: 100px;
+  left: calc(50% - 175px);
+  position: absolute;
+  font-family: sans-serif;
+}
+#eventTitleInput {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 3px gray;
+}
+#eventTitleInput.error {
+  border: 2px solid red;
+}
+#cancelButton, #deleteButton {
+  background-color: #d36c6c;
+}
+#saveButton, #closeButton {
+  background-color: #92a1d1;
+}
+#eventText {
+  font-size: 14px;
+}
+#modalBackDrop {
+  display: none;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0,0,0,0.8);
+}/* CSS Document */
+

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automation Dashboard</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	
+	
+  </head>
+  <body>
+	<div class="sidebar">
+		<div class="logo_content">
+			<div class="logo">
+				<i class="bx bx-bug"></i>
+				<div class="logo_name">Automation Dashboard</div>
+<!--				<i class="bx bx-menu"></i>-->
+			</div>
+		</div>
+		<ul class="nav_list">
+			<li>
+				<i class="bx bx-search-alt-2"></i>
+				<input type="text" placeholder="Search...">
+<!--				<span class="tooltip">Search</span>-->
+			</li>
+			<li>
+				<a href="https://confluence.meredith.com/pages/viewpage.action?pageId=27081626">
+					<i class="bx bxs-file-doc"></i>
+					<span class="links_name">Documentation</span>
+				</a>
+<!--				<span class="tooltip">Docs</span>-->
+			</li>
+			<li>
+				<a href="https://confluence.meredith.com/pages/viewpage.action?pageId=27081626" id="env-btn">
+					<i class="bx bxs-tree"></i>
+					<span class="links_name">Environments</span>
+				</a>
+<!--
+				<ul id="sub-menu">
+					<li><a class="links_name" href="#"></a>Environments</li>
+					<li><a href="#" id="stagingBtn">Staging</a></li>
+					<li><a href="#" id="qaBtn">QA</a></li>
+					<li><a href="#" id="prodBtn">Production</a></li>
+				</ul>
+-->
+<!--				<span class="tooltip">Environments</span>-->
+			</li>
+			<li>
+				<a href="https://gitlab.sele.co/qa-eng/sigma-octantis/-/pipelines">
+					<i class="bx bxl-gitlab"></i>
+					<span class="links_name">Pipelines</span>
+				</a>
+<!--				<span class="tooltip">Pipelines</span>-->
+			</li>
+			<li>
+				<a href="https://jira.meredith.com/secure/RapidBoard.jspa?rapidView=3508&projectKey=POL">
+					<i class="bx bxs-dashboard"></i>
+					<span class="links_name">Jira</span>
+				</a>
+<!--				<span class="tooltip">Jira</span>-->
+			</li>
+		</ul>
+		<div class="ddmlogo_content">
+			<div class="ddmlogo">
+				<div class="ddmlogo_details">
+					<img src="https://mma.prnewswire.com/media/1654404/DotdashMeredith_Lockup_Logo.jpg?p=facebook" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="home_content">
+	  <div id="container">
+      <div id="header">
+        <div id="monthDisplay"></div>
+		<div id="btnDisplay">
+			<div class="monthButtons">
+          		<button id="backButton">Back</button>
+          		<button id="nextButton">Next</button>
+        	</div>
+			<div class="envButtons">
+		  		<button id="polButtons">Polaris</button>
+		  		<button id="btxButtons">Bellatrix</button>
+			</div>
+		</div>
+      </div>
+
+    <div class="totalCalendar">
+		<div id="weekdays">
+			<div>Sunday</div>
+			<div>Monday</div>
+			<div>Tuesday</div>
+			<div>Wednesday</div>
+			<div>Thursday</div>
+			<div>Friday</div>
+			<div>Saturday</div>
+    	</div>
+
+      	<div id="calendar"></div></div>
+	
+    </div>
+	</div>
+
+    <div id="newEventModal">
+      <h2>New Test</h2>
+
+      <input id="eventTitleInput" placeholder="Testing Event" />
+	  <p>Select an application:</p>
+		<div>
+			<input type="radio" id="polaris" name="application" value="polaris" checked><label for="polaris">Polaris</label>
+		</div>
+		<div>
+			<input type="radio" id="bellatrix" name="application" value="bellatrix"><label for="bellatrix">Bellatrix</label>
+		</div>
+	  <p>Select an environment:</p>
+		<div>
+			<input type="radio" id="qa" name="environment" value="qa" checked><label for="qa">QA</label>
+		</div>
+		<div>
+			<input type="radio" id="staging" name="environment" value="staging"><label for="staging">Staging</label>
+		</div>
+		<div>
+			<input type="radio" id="prod" name="environment" value="prod" checked><label for="prod">Production</label>
+		</div>
+      <button id="saveButton">Save</button>
+      <button id="cancelButton">Cancel</button>
+    </div>
+
+    <div id="deleteEventModal">
+      <h2>Event</h2>
+
+      <p id="eventText"></p>
+
+      <button id="deleteButton">Delete</button>
+      <button id="closeButton">Close</button>
+    </div>
+
+    <div id="modalBackDrop"></div>
+
+    <script src="./script.js"></script>
+	
+  </body>
+</html>
