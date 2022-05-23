@@ -107,7 +107,13 @@
     <div id="newEventModal">
       <h2>New Test</h2>
 
-      <input id="eventTitleInput" placeholder="Testing Event" />
+      	  <p>Select an test type:</p>
+		<div>
+			<input type="radio" id="regression" name="test_type" value="regression" checked><label for="regression">Regression</label>
+		</div>
+		<div>
+			<input type="radio" id="smoke" name="test_type" value="smoke"><label for="smoke">Smoke</label>
+		</div>
 	  <p>Select an application:</p>
 		<div>
 			<input type="radio" id="polaris" name="application" value="polaris" checked><label for="polaris">Polaris</label>
