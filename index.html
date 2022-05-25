@@ -105,23 +105,26 @@
 	</div>
 
     <div id="newEventModal">
-      <h2>New Test</h2>
+      <h1>New Test</h1>
 
-      	  <p>Select a test type:</p>
+      	  <h3>Test Type</h3>
 		<div>
 			<input type="radio" id="regression" name="test_type" value="regression" checked><label for="regression">Regression</label>
 		</div>
 		<div>
 			<input type="radio" id="smoke" name="test_type" value="smoke"><label for="smoke">Smoke</label>
 		</div>
-	  <p>Select an application:</p>
+	  <h3>Application</h3>
 		<div>
 			<input type="radio" id="polaris" name="application" value="polaris" checked><label for="polaris">Polaris</label>
 		</div>
 		<div>
 			<input type="radio" id="bellatrix" name="application" value="bellatrix"><label for="bellatrix">Bellatrix</label>
 		</div>
-	  <p>Select an environment:</p>
+	    	<div>
+			<input type="radio" id="calvera" name="application" value="calvera"><label for="calvera">Calvera</label>
+		</div>
+	  <h3>Environment</h3>
 		<div>
 			<input type="radio" id="qa" name="environment" value="qa" checked><label for="qa">QA</label>
 		</div>
@@ -131,8 +134,24 @@
 		<div>
 			<input type="radio" id="prod" name="environment" value="prod" checked><label for="prod">Production</label>
 		</div>
-      <button id="saveButton">Save</button>
-      <button id="cancelButton">Cancel</button>
+	    <h3><label for="testing_reports">Testing Reports</label></h3>
+	    	<div id>
+			<select id="testing_reports" name="testing_reports">
+				<option value="" disabled selected hidden>Choose Test:</option>
+				<option value="admin">Admin</option>
+				<option value="asset">Asset</option>
+				<option value="complex_filter">ComplexFilter</option>
+				<option value="mixer">Mixer</option>
+				<option value="mixer_ri">MixerRI</option>
+				<option value="pau">PAU</option>
+				<option value="sdu">SDU</option>
+				<option value="smoke">Smoke</option>
+			</select>
+			<input type="url" id="test_url" name="test_url" placeholder="Report URL">	
+	    	</div>
+	    	<button id="addTest">+ Test Report</button><br>
+      		<button id="saveButton">Save</button>
+      		<button id="cancelButton">Cancel</button>
     </div>
 
     <div id="deleteEventModal">
