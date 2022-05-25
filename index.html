@@ -134,7 +134,17 @@
 		<div>
 			<input type="radio" id="prod" name="environment" value="prod" checked><label for="prod">Production</label>
 		</div>
-	    <p>Testing Reports</p>
+	    <p><label for="testing_reports">Testing Reports</label></p>
+	    	<select id="testing_reports" name="testing_reports">
+    			<option value="admin">Admin</option>
+    			<option value="asset">Asset</option>
+    			<option value="complex_filter">ComplexFilter</option>
+    			<option value="mixer">Mixer</option>
+			<option value="mixer_ri">MixerRI</option>
+			<option value="pau">PAU</option>
+			<option value="sdu">SDU</option>
+			<option value="smoke">Smoke</option>
+  		</select>
       		<button id="saveButton">Save</button>
       		<button id="cancelButton">Cancel</button>
     </div>
