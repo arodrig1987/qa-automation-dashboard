@@ -135,7 +135,7 @@
 			<input type="radio" id="prod" name="environment" value="prod" checked><label for="prod">Production</label>
 		</div>
 	    <h3><label for="testing_reports">Testing Reports</label></h3>
-	    	<div>
+	    	<div id>
 			<select id="testing_reports" name="testing_reports">
 				<option value="" disabled selected hidden>Choose Test:</option>
 				<option value="admin">Admin</option>
@@ -147,8 +147,9 @@
 				<option value="sdu">SDU</option>
 				<option value="smoke">Smoke</option>
 			</select>
+			<input type="text" id="test_url" name="test_url" placeholder="Report URL">	
 	    	</div>
-	    	<input type="text" id="test_url" name="test_url" placeholder="Report URL">
+	    	<button id="addTest">+ Test Report</button><br>
       		<button id="saveButton">Save</button>
       		<button id="cancelButton">Cancel</button>
     </div>
