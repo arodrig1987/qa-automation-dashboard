@@ -389,6 +389,14 @@ button {
 #saveButton, #closeButton {
   background-color: #92a1d1;
 }
+
+#addTest {
+  color: white;
+  background-color: #11101d;
+  border: none;
+  margin-bottom: 5px;
+}
+
 #eventText {
   font-size: 14px;
 }
