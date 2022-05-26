@@ -370,6 +370,11 @@ button {
   position: absolute;
   font-family: sans-serif;
 }
+
+form {
+  margin: 10px;
+}
+
 #eventTitleInput {
   padding: 10px;
   width: 100%;
