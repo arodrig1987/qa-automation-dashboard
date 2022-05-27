@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	
   </head>
   <body>
@@ -105,37 +105,43 @@
 	</div>
 
     <div id="newEventModal">
-      <h1>New Test</h1>
+      <h1>New Testing Event</h1>
 
       	  <h3>Test Type</h3>
-		<div>
-			<input type="radio" id="regression" name="test_type" value="regression" checked><label for="regression">Regression</label>
-		</div>
-		<div>
-			<input type="radio" id="smoke" name="test_type" value="smoke"><label for="smoke">Smoke</label>
-		</div>
+		<form>
+    			<label class="radio-inline">
+      				<input type="radio" id="regression" name="test_type" value="regression" checked>Regression
+    			</label>
+    			<label class="radio-inline">
+      				<input type="radio" id="smoke" name="test_type" value="smoke">Smoke
+    			</label>
+  		</form>
 	  <h3>Application</h3>
-		<div>
-			<input type="radio" id="polaris" name="application" value="polaris" checked><label for="polaris">Polaris</label>
-		</div>
-		<div>
-			<input type="radio" id="bellatrix" name="application" value="bellatrix"><label for="bellatrix">Bellatrix</label>
-		</div>
-	    	<div>
-			<input type="radio" id="calvera" name="application" value="calvera"><label for="calvera">Calvera</label>
-		</div>
+	    	<form>
+    			<label class="radio-inline" for="console">
+      				<input type="radio" id="console" name="application" value="console" checked>Console
+    			</label>
+    			<label class="radio-inline" for="bellatrix">
+      				<input type="radio" id="bellatrix" name="application" value="bellatrix">Bellatrix
+    			</label>
+    			<label class="radio-inline" for="calvera">
+      				<input type="radio" id="calvera" name="application" value="calvera">Calvera
+    			</label>
+  		</form>
 	  <h3>Environment</h3>
-		<div>
-			<input type="radio" id="qa" name="environment" value="qa" checked><label for="qa">QA</label>
-		</div>
-		<div>
-			<input type="radio" id="staging" name="environment" value="staging"><label for="staging">Staging</label>
-		</div>
-		<div>
-			<input type="radio" id="prod" name="environment" value="prod" checked><label for="prod">Production</label>
-		</div>
+	    	<form>
+    			<label class="radio-inline" for="qa">
+      				<input type="radio" id="qa" name="environment" value="qa" checked>QA
+    			</label>
+    			<label class="radio-inline" for="staging">
+      				<input type="radio" id="staging" name="environment" value="staging">Staging
+    			</label>
+    			<label class="radio-inline" for="prod">
+      				<input type="radio" id="prod" name="environment" value="prod">Production
+    			</label>
+  		</form>
 	    <h3><label for="testing_reports">Testing Reports</label></h3>
-	    	<div id>
+	    	<form>
 			<select id="testing_reports" name="testing_reports">
 				<option value="" disabled selected hidden>Choose Test:</option>
 				<option value="admin">Admin</option>
@@ -148,7 +154,7 @@
 				<option value="smoke">Smoke</option>
 			</select>
 			<input type="url" id="test_url" name="test_url" placeholder="Report URL">	
-	    	</div>
+	    	</form>
 	    	<button id="addTest">+ Test Report</button><br>
       		<button id="saveButton">Save</button>
       		<button id="cancelButton">Cancel</button>

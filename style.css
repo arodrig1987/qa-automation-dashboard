@@ -360,8 +360,9 @@ button {
   display: none;
   z-index: 20;
   padding: 25px;
-  background-color: #e8f4fa;
-  box-shadow: 0px 0px 3px black;
+  background-color: #11101d;
+  box-shadow: 0px 0px 3px white;
+  color: white;
   border-radius: 5px;
   width: 350px;
   top: 100px;
@@ -369,6 +370,11 @@ button {
   position: absolute;
   font-family: sans-serif;
 }
+
+form {
+  margin: 10px;
+}
+
 #eventTitleInput {
   padding: 10px;
   width: 100%;
@@ -388,6 +394,16 @@ button {
 #saveButton, #closeButton {
   background-color: #92a1d1;
 }
+
+#addTest {
+  width: 150px;
+  color: white;
+  background-color: #11101d;
+  border: none;
+  margin: 15px 0px;
+  whitespace: no-wrap;
+}
+
 #eventText {
   font-size: 14px;
 }
