@@ -15,6 +15,7 @@ body {
   justify-content: center;
   background-color: #FFFCFF;
   font-family: 'Kalam', cursive;
+  overflow: scroll;
 }
 button {
   width: 75px;
