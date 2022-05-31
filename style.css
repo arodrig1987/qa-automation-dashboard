@@ -367,7 +367,7 @@ button {
   width: 350px;
   top: 100px;
   left: calc(50% - 175px);
-  position: absolute;
+  position: fixed;
   font-family: sans-serif;
 }
 
@@ -399,6 +399,7 @@ form {
   width: 150px;
   color: white;
   background-color: #11101d;
+  outline: none;
   border: none;
   margin: 15px 0px;
   whitespace: no-wrap;
@@ -414,7 +415,7 @@ form {
   z-index: 10;
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   background-color: rgba(0,0,0,0.8);
 }/* CSS Document */
 
