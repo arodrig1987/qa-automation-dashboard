@@ -321,6 +321,7 @@ button {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+  height: 100%;
 }
 .day {
   width: 100px;
