@@ -15,6 +15,7 @@ body {
   justify-content: center;
   background-color: #FFFCFF;
   font-family: 'Kalam', cursive;
+  overflow-y: scroll;
 }
 button {
   width: 75px;
@@ -321,6 +322,7 @@ button {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+  height: 100%;
 }
 .day {
   width: 100px;
