@@ -102,7 +102,8 @@
       <h1>New Testing Event</h1>
 
       	  <h3>Test Type</h3>
-		<form>
+	    	<input type="time" id="test_time" name="test_time">
+		<form id="test_type">
     			<label class="radio-inline">
       				<input type="radio" id="regression" name="test_type" value="regression" checked>Regression
     			</label>
@@ -111,7 +112,7 @@
     			</label>
   		</form>
 	  <h3>Application</h3>
-	    	<form>
+	    	<form id="app_type">
     			<label class="radio-inline" for="console">
       				<input type="radio" id="console" name="application" value="console" checked>Console
     			</label>
@@ -123,7 +124,7 @@
     			</label>
   		</form>
 	  <h3>Environment</h3>
-	    	<form>
+	    	<form id="env_type">
     			<label class="radio-inline" for="qa">
       				<input type="radio" id="qa" name="environment" value="qa" checked>QA
     			</label>
@@ -135,7 +136,7 @@
     			</label>
   		</form>
 	    <h3><label for="testing_reports">Testing Reports</label></h3>
-	    	<form>
+	    	<form id="report_type">
 			<select id="testing_reports" name="testing_reports">
 				<option value="" disabled selected hidden>Choose Test:</option>
 				<option value="admin">Admin</option>
