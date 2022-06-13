@@ -6,7 +6,7 @@ const calendar = document.getElementById('calendar');
 const newEventModal = document.getElementById('newEventModal');
 const deleteEventModal = document.getElementById('deleteEventModal');
 const backDrop = document.getElementById('modalBackDrop');
-const testTime = document.getElementById('testTime');
+const pipelineId = document.getElementById('pipeline_id');
 const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
 function openModal(date) {
@@ -82,28 +82,28 @@ function load() {
 }
 
 function closeModal() {
-  testTime.classList.remove('error');
+  pipelineId.classList.remove('error');
   newEventModal.style.display = 'none';
   deleteEventModal.style.display = 'none';
   backDrop.style.display = 'none';
-  testTime.value = '';
+  pipelineId.value = '';
   clicked = null;
   load();
 }
 
 function saveEvent() {
-  if (testTime.value) {
-    testTime.classList.remove('error');
+  if (pipelineId.value) {
+    pipelineId.classList.remove('error');
 
     events.push({
       date: clicked,
-      title: testTime.value,
+      title: pipelineId.value,
     });
 
     localStorage.setItem('events', JSON.stringify(events));
     closeModal();
   } else {
-    testTime.classList.add('error');
+    pipelineId.classList.add('error');
   }
 }
 
