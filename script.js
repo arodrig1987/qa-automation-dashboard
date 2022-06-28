@@ -50,6 +50,53 @@ function load() {
     `${dt.toLocaleDateString('en-us', { month: 'long' })} ${year}`;
 
   calendar.innerHTML = '';
+  
+// Change background header image 
+
+  let monthlyHeader = document.querySelector('header');
+  let currentMonth = document.getElementById('monthDisplay').innerText;
+  let currentHeaderBackground = monthlyHeader.style.backgroundImage;
+  
+  switch(currentMonth) {
+    case 'January':
+      currentHeaderBackground = 'url("headerdashboardsample.jpeg")';
+      break;
+    case 'February':
+      currentHeaderBackground = 'url("headerbackground.jpg")';
+      break;
+    case 'March':
+      currentHeaderBackground = 'url("headerdashboardsample.jpeg")';
+      break;
+    case 'April':
+      currentHeaderBackground = 'url("headerbackground.jpg")';
+      break;
+    case 'May':
+      currentHeaderBackground = 'url("headerdashboardsample.jpeg")';
+      break;
+    case 'June':
+      currentHeaderBackground = 'url("headerbackground.jpg")';
+      break;
+    case 'July':
+      currentHeaderBackground = 'url("headerdashboardsample.jpeg")';
+      break;
+    case 'August':
+      currentHeaderBackground = 'url("headerbackground.jpg")';
+      break;
+    case 'September':
+      currentHeaderBackground = 'url("headerdashboardsample.jpeg")';
+      break;
+    case 'October':
+      currentHeaderBackground = 'url("headerbackground.jpg")';
+      break;
+    case 'November':
+      currentHeaderBackground = 'url("headerdashboardsample.jpeg")';
+      break;
+    case 'December':
+      currentHeaderBackground = 'url("headerbackground.jpg")';
+      break;
+    default:
+      currentHeaderBackground = 'url("headerbackground.jpg")';
+  }
 
   for(let i = 1; i <= paddingDays + daysInMonth; i++) {
     const daySquare = document.createElement('div');
