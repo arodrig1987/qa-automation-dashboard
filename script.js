@@ -75,6 +75,7 @@ function load() {
       break;
     case 'June':
       currentHeaderBackground = 'url("headerbackground.jpg")';
+      console.log('June is working');
       break;
     case 'July':
       currentHeaderBackground = 'url("headerdashboardsample.jpeg")';
@@ -96,6 +97,7 @@ function load() {
       break;
     default:
       currentHeaderBackground = 'url("headerbackground.jpg")';
+      console.log('default is working');
   }
 
   for(let i = 1; i <= paddingDays + daysInMonth; i++) {
