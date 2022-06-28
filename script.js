@@ -54,7 +54,7 @@ function load() {
 // Change background header image 
 
   let monthlyHeader = document.querySelector('header');
-  let currentMonth = document.getElementById('monthDisplay').innerText;
+  let currentMonth = dt.toLocaleDateString('en-us', { month: 'long' });
   let currentHeaderBackground = monthlyHeader.style.backgroundImage;
   
   switch(currentMonth) {
