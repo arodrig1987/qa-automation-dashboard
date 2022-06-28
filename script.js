@@ -69,9 +69,11 @@ function load() {
       break;
     case 'April':
       currentHeaderBackground = 'url("headerbackground.jpg")';
+      console.log('April is working');
       break;
     case 'May':
       currentHeaderBackground = 'url("headerdashboardsample.jpeg")';
+      console.log('May is working');
       break;
     case 'June':
       currentHeaderBackground = 'url("headerbackground.jpg")';
@@ -79,6 +81,7 @@ function load() {
       break;
     case 'July':
       currentHeaderBackground = 'url("headerdashboardsample.jpeg")';
+      console.log('July is working');
       break;
     case 'August':
       currentHeaderBackground = 'url("headerbackground.jpg")';
