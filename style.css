@@ -265,6 +265,7 @@ button {
   font-size: 26px;
   font-family: 'Vollkorn', serif;
   text-shadow: 2px 2px 2px #F1E819;
+  background-image: '';
   display: flex;
   justify-content: space-between;
   height: 220px;
