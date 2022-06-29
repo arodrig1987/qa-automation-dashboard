@@ -58,47 +58,47 @@ function load() {
   
   switch(currentMonth) {
     case 'January':
-      currentHeader.style.backgroundImage = 'url("headerdashboardsample.jpeg")';
+      currentHeader.style.backgroundImage = 'url("img/headerdashboardsample.jpeg")';
       break;
     case 'February':
-      currentHeader.style.backgroundImage = 'url("headerbackground.jpg")';
+      currentHeader.style.backgroundImage = 'url("img/headerbackground.jpg")';
       break;
     case 'March':
-      currentHeader.style.backgroundImage = 'url("headerdashboardsample.jpeg")';
+      currentHeader.style.backgroundImage = 'url("img/headerdashboardsample.jpeg")';
       break;
     case 'April':
-      currentHeader.style.backgroundImage = 'url("headerbackground.jpg")';
+      currentHeader.style.backgroundImage = 'url("img/headerbackground.jpg")';
       console.log('April is working');
       break;
     case 'May':
-      currentHeader.style.backgroundImage = 'url("headerdashboardsample.jpeg")';
+      currentHeader.style.backgroundImage = 'url("img/headerdashboardsample.jpeg")';
       console.log('May is working');
       break;
     case 'June':
-      currentHeader.style.backgroundImage = 'url("headerbackground.jpg")';
+      currentHeader.style.backgroundImage = 'url("img/headerbackground.jpg")';
       console.log('June is working');
       break;
     case 'July':
-      currentHeader.style.backgroundImage = 'url("headerdashboardsample.jpeg")';
+      currentHeader.style.backgroundImage = 'url("img/headerdashboardsample.jpeg")';
       console.log('July is working');
       break;
     case 'August':
-      currentHeader.style.backgroundImage = 'url("headerbackground.jpg")';
+      currentHeader.style.backgroundImage = 'url("img/headerbackground.jpg")';
       break;
     case 'September':
-      currentHeader.style.backgroundImage = 'url("headerdashboardsample.jpeg")';
+      currentHeader.style.backgroundImage = 'url("img/headerdashboardsample.jpeg")';
       break;
     case 'October':
-      currentHeader.style.backgroundImage = 'url("headerbackground.jpg")';
+      currentHeader.style.backgroundImage = 'url("img/headerbackground.jpg")';
       break;
     case 'November':
-      currentHeader.style.backgroundImage = 'url("headerdashboardsample.jpeg")';
+      currentHeader.style.backgroundImage = 'url("img/headerdashboardsample.jpeg")';
       break;
     case 'December':
-      currentHeader.style.backgroundImage = 'url("headerbackground.jpg")';
+      currentHeader.style.backgroundImage = 'url("img/headerbackground.jpg")';
       break;
     default:
-      currentHeader.style.backgroundImage = 'url("headerbackground.jpg")';
+      currentHeader.style.backgroundImage = 'url("img/headerbackground.jpg")';
       console.log('default is working');
   }
 
