@@ -136,7 +136,8 @@
   		</form>
 	    <h3><label for="testing_reports">Testing Reports</label></h3>
 	    	<input type="text" id="pipeline_id" name="pipeline_id" placeholder="Pipeline ID">
-	    	<form id="report_type">
+	    <div id="formsContainer">
+	    	<form id="reportType">
 			<select id="testing_reports" name="testing_reports">
 				<option value="" disabled selected hidden>Choose Test:</option>
 				<option value="admin">Admin</option>
@@ -150,6 +151,7 @@
 			</select>
 			<input type="url" id="test_url" name="test_url" placeholder="Report URL">	
 	    	</form>
+	    </div>
 	    	<button id="addTest">+ Test Report</button><br>
       		<button id="saveButton">Save</button>
       		<button id="cancelButton">Cancel</button>
